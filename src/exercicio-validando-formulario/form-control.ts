@@ -14,8 +14,16 @@ form.addEventListener('submit', function (event: Event) {
     checkForEmptyFields(username, email, password, password2);
     checkEmail(email);
     checkEqualPasswords(password, password2);
-    if (shoudSendForm(this)) console.log('Formulário válido');
+    if (shoudSendForm(this)) formSendSuccess();
 });
+
+function formSendSuccess() {
+    username.value = '';
+    email.value = '';
+    password.value = '';
+    password2.value = '';
+    console.log('Formulário enviado');
+}
 
 function checkForEmptyFields(...inputs: HTMLInputElement[]): void {
     inputs.forEach((input) => {

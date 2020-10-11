@@ -696,8 +696,15 @@ form.addEventListener('submit', function (event) {
     checkEmail(email);
     checkEqualPasswords(password, password2);
     if (shoudSendForm(this))
-        console.log('Formulário válido');
+        formSendSuccess();
 });
+function formSendSuccess() {
+    username.value = '';
+    email.value = '';
+    password.value = '';
+    password2.value = '';
+    console.log('Formulário enviado');
+}
 function checkForEmptyFields() {
     var inputs = [];
     for (var _i = 0; _i < arguments.length; _i++) {

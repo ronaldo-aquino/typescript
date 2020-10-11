@@ -2,7 +2,8 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/webpack/index.ts',
+    entry:
+        './src/exercicio-validando-formulario/exercicio-validando-formulario.ts',
     module: {
         rules: [
             {

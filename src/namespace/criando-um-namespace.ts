@@ -1,17 +1,4 @@
-/* eslint-disable @typescript-eslint/no-namespace */
+/* eslint-disable @typescript-eslint/triple-slash-reference */
+/// <reference path="module.ts" />
 
-namespace MeuNamespace {
-    export const nome = 'Ronaldo';
-
-    export class PessoaDoNamespace {
-        constructor(public nome: string) {}
-    }
-
-    const pessoa = new PessoaDoNamespace(nome);
-    console.log(pessoa);
-}
-
-const pessoaDoNamespace = new MeuNamespace.PessoaDoNamespace(MeuNamespace.nome);
-console.log(pessoaDoNamespace);
-
-export default 1;
+console.log(MeuNamespace.nome);

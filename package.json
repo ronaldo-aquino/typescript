@@ -33,7 +33,9 @@
   },
   "homepage": "https://github.com/ronaldo-aquino/typescript#readme",
   "dependencies": {
+    "@types/lodash": "^4.14.162",
     "@types/validator": "^13.1.0",
+    "lodash": "^4.17.20",
     "validator": "^13.1.17"
   }
 }
